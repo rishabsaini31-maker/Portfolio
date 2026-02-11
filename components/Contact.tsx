@@ -47,7 +47,7 @@ export default function Contact() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
     const element = sectionRef.current;

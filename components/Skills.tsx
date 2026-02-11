@@ -62,7 +62,7 @@ export default function Skills() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
     const element = sectionRef.current;
