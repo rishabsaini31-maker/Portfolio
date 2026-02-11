@@ -13,16 +13,17 @@ export default function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const element = sectionRef.current;
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, []);
@@ -44,11 +45,11 @@ export default function About() {
           </h2>
           <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800 hover:border-gray-700 transition-all duration-300">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a full-stack developer with a startup mindset, passionate
+              I&apos;m a full-stack developer with a startup mindset, passionate
               about building scalable web applications that solve real problems.
-              My approach goes beyond writing code—I focus on understanding
-              business needs and architecting solutions that grow with your
-              product.
+              My approach goes beyond writing code&mdash;I focus on
+              understanding business needs and architecting solutions that grow
+              with your product.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               With expertise in modern web technologies, I specialize in
@@ -58,9 +59,9 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
               I thrive on solving complex technical challenges and turning ideas
-              into functional, impactful products. Whether it's building
-              e-commerce platforms, inventory systems, or custom web solutions—I
-              deliver results that matter.
+              into functional, impactful products. Whether it&apos;s building
+              e-commerce platforms, inventory systems, or custom web
+              solutions&mdash;I deliver results that matter.
             </p>
           </div>
         </div>

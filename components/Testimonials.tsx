@@ -54,13 +54,14 @@ export default function Testimonials() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const element = sectionRef.current;
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, []);
@@ -91,6 +92,7 @@ export default function Testimonials() {
                 className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800 hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/10"
               >
                 <div className="flex items-center mb-4">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -106,7 +108,7 @@ export default function Testimonials() {
                   </div>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
                 <div className="mt-4 flex text-primary-500">
                   {"★★★★★".split("").map((star, i) => (

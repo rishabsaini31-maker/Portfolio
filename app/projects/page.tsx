@@ -237,6 +237,7 @@ export default function ProjectsPage() {
                   className="block relative group overflow-hidden"
                 >
                   <div className="aspect-video w-full bg-gray-800 relative overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={project.image}
                       alt={project.title}

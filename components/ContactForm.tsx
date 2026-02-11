@@ -24,13 +24,14 @@ export default function ContactForm() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const element = sectionRef.current;
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, []);
@@ -152,7 +153,7 @@ export default function ContactForm() {
 
                 {status === "success" && (
                   <p className="text-green-500 text-sm text-center">
-                    Thanks for reaching out! I'll get back to you soon.
+                    Thanks for reaching out! I&apos;ll get back to you soon.
                   </p>
                 )}
               </form>
@@ -205,9 +206,9 @@ export default function ContactForm() {
                   Let's Work Together
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  I'm always interested in hearing about new projects and
+                  I&apos;m always interested in hearing about new projects and
                   opportunities. Whether you have a question or just want to say
-                  hi, I'll try my best to get back to you!
+                  hi, I&apos;ll try my best to get back to you!
                 </p>
               </div>
             </div>
