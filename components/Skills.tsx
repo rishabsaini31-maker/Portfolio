@@ -27,7 +27,6 @@ const skillCategories: SkillCategory[] = [
       "Express",
       "REST APIs",
       "Python",
-      "Authentication",
     ],
   },
   {
@@ -37,12 +36,10 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Tools / DevOps",
     skills: [
-      "Git",
       "GitHub",
       "Render",
       "Vercel",
       "AWS",
-      "CI/CD",
       "Postman",
       "VS Code",
     ],

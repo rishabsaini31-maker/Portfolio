@@ -7,6 +7,7 @@ interface Project {
   id: string;
   title: string;
   description: string;
+  detailedDescription: string;
   techStack: string[];
   features: string[];
   demoUrl?: string;
@@ -20,7 +21,9 @@ const projects: Project[] = [
     id: "inventory-main",
     title: "Inventory Main",
     description:
-      "A comprehensive inventory management system designed for businesses to track stock, manage orders, and analyze inventory data in real-time.",
+      "A comprehensive inventory management system designed for businesses to track stock, manage orders , Creating Bills , and analyze inventory data in real-time.",
+    detailedDescription:
+      "Inventory Main streamlines store operations with stock entry management, professional billing with PDF download, and comprehensive sales data tracking. Features include a profit panel for financial analysis, and customer profiles showing purchase history, products bought, and spending patterns for better customer insights.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
     features: [
       "Real-time stock tracking",
@@ -39,6 +42,8 @@ const projects: Project[] = [
     title: "Orgo Bloom",
     description:
       "Full-featured e-commerce platform with secure payment integration, product management, and seamless shopping experience.",
+    detailedDescription:
+      "Orgo Bloom is a modern e-commerce platform designed for organic beauty and wellness products. The application features a beautiful, user-friendly interface with advanced product filtering, search functionality, and a seamless checkout process. Integrated with Stripe for secure payment processing, it supports multiple payment methods and provides order tracking capabilities. The admin panel allows for easy product management, inventory tracking, and sales analytics. Built with Next.js for optimal performance and SEO, the platform delivers a fast, responsive shopping experience.",
     techStack: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Prisma"],
     features: [
       "Secure payment processing",
@@ -54,20 +59,22 @@ const projects: Project[] = [
   },
   {
     id: "ebook-web-app",
-    title: "Ebook Web App",
+    title: "Ebook Finance Analytics",
     description:
-      "Digital reading platform with book management, reading progress tracking, and bookmarking capabilities for an enhanced reading experience.",
+      "A web application for managing daily sales and expenses, tracking revenue, profit, and loss, and generating financial reports.",
+    detailedDescription:
+      "Ebook Finance Analytics manages daily sales entries, expense tracking, pending payments, and loans with detailed reports. Features interactive analytics with pie charts and diagrams for visualizing financial data, helping businesses track performance and make informed decisions.",
     techStack: ["React", "Firebase", "Redux", "Material-UI"],
     features: [
-      "Digital book reader",
-      "Progress tracking",
-      "Bookmarks & notes",
-      "Library management",
+      "Manage daily sales , Expense ",
+      "Track Revenue , Profit , Loss",
+      "Generate reports on sales and expenses",
+      "User analytics dashboard",
     ],
-    demoUrl: "#",
+    demoUrl: "https://ebook-finance-analytics.vercel.app",
     githubUrl: "#",
     image:
-      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop",
+      "https://v1.screenshot.11ty.dev/https%3A%2F%2Febook-finance-analytics.vercel.app%2F/opengraph/",
     category: "Personal",
   },
   {
@@ -75,6 +82,8 @@ const projects: Project[] = [
     title: "Wholesale Landing Page",
     description:
       "High-converting landing page for wholesale business with modern design, lead capture forms, and mobile-responsive layout.",
+    detailedDescription:
+      "A professionally designed landing page created for a wholesale business client. The page is optimized for conversions with strategically placed call-to-action buttons, lead capture forms, and compelling product showcases. Built with performance in mind, the page loads quickly and provides an excellent user experience across all devices. The design follows modern UI/UX principles with clean typography, intuitive navigation, and visually appealing sections. SEO best practices were implemented to improve search engine visibility and organic traffic.",
     techStack: ["HTML", "JavaScript", "CSS"],
     features: [
       "Responsive design",
@@ -314,6 +323,29 @@ export default function ProjectsPage() {
                         GitHub
                       </a>
                     )}
+                  </div>
+
+                  {/* Detailed Description Box */}
+                  <div className="mt-6 pt-6 border-t border-gray-700">
+                    <h3 className="text-lg font-semibold text-primary-400 mb-3 flex items-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      About This Project
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed text-sm">
+                      {project.detailedDescription}
+                    </p>
                   </div>
                 </div>
               </div>
