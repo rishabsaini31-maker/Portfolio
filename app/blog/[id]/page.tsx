@@ -494,7 +494,7 @@ export default function BlogPostPage() {
               Post Not Found
             </h1>
             <p className="text-gray-400 mb-8">
-              The blog post you're looking for doesn't exist.
+              The blog post you{"'"}re looking for doesn{"'"}t exist.
             </p>
             <Link
               href="/blog"
