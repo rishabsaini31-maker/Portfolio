@@ -25,8 +25,14 @@ export default function Header() {
             >
               Projects
             </Link>
+            <Link
+              href="/blog"
+              className="text-gray-400 hover:text-primary-500 transition-colors"
+            >
+              Blogs
+            </Link>
             <a
-              href="https://github.com/rishabsaini"
+              href="https://github.com/rishabsaini31-maker"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary-500 transition-colors"
@@ -34,7 +40,7 @@ export default function Header() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/rishabsaini"
+              href="https://www.linkedin.com/in/rishab-saini-8839422b0"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary-500 transition-colors"
@@ -42,7 +48,7 @@ export default function Header() {
               LinkedIn
             </a>
             <a
-              href="mailto:rishab.saini@example.com"
+              href="mailto:rishabsainiupw165@gmail.com"
               className="text-gray-400 hover:text-primary-500 transition-colors"
             >
               Email
@@ -104,8 +110,15 @@ export default function Header() {
             >
               Projects
             </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-gray-400 hover:text-primary-500 transition-colors py-2"
+            >
+              Blogs
+            </Link>
             <a
-              href="https://github.com/rishabsaini"
+              href="https://github.com/rishabsaini31-maker"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-gray-400 hover:text-primary-500 transition-colors py-2"
@@ -113,7 +126,7 @@ export default function Header() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/rishabsaini"
+              href="https://www.linkedin.com/in/rishab-saini-8839422b0"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-gray-400 hover:text-primary-500 transition-colors py-2"
@@ -121,7 +134,7 @@ export default function Header() {
               LinkedIn
             </a>
             <a
-              href="mailto:rishab.saini@example.com"
+              href="mailto:rishabsainiupw165@gmail.com"
               className="block text-gray-400 hover:text-primary-500 transition-colors py-2"
             >
               Email

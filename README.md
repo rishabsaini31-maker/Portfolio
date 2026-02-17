@@ -117,6 +117,6 @@ MIT License - feel free to use this template for your own portfolio.
 
 ## Contact
 
-- **Email:** rishab.saini@example.com
-- **GitHub:** [@rishabsaini](https://github.com/rishabsaini)
-- **LinkedIn:** [Rishab Saini](https://linkedin.com/in/rishabsaini)
+- **Email:** rishabsainiupw165@gmail.com
+- **GitHub:** [@rishabsaini31-maker](https://github.com/rishabsaini31-maker)
+- **LinkedIn:** [Rishab Saini](https://www.linkedin.com/in/rishab-saini-8839422b0)

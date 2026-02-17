@@ -13,8 +13,8 @@ const contactInfoList: ContactInfo[] = [
   {
     icon: "📧",
     label: "Email",
-    value: "rishab.saini@example.com",
-    link: "mailto:rishab.saini@example.com",
+    value: "rishabsainiupw165@gmail.com",
+    link: "mailto:rishabsainiupw165@gmail.com",
   },
   {
     icon: "📱",
@@ -25,14 +25,14 @@ const contactInfoList: ContactInfo[] = [
   {
     icon: "💼",
     label: "GitHub",
-    value: "@rishabsaini",
-    link: "https://github.com/rishabsaini",
+    value: "@rishabsaini31-maker",
+    link: "https://github.com/rishabsaini31-maker",
   },
   {
     icon: "🔗",
     label: "LinkedIn",
     value: "Rishab Saini",
-    link: "https://linkedin.com/in/rishabsaini",
+    link: "https://www.linkedin.com/in/rishab-saini-8839422b0",
   },
 ];
 

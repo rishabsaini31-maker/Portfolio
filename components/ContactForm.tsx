@@ -116,7 +116,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
-                    placeholder="your.email@example.com"
+                    placeholder="your.email@gmail.com"
                   />
                 </div>
 
@@ -167,36 +167,36 @@ export default function ContactForm() {
                 </h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:rishab.saini@example.com"
+                    href="mailto:rishabsainiupw165@gmail.com"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
                     <span className="text-2xl">📧</span>
-                    <span>rishab.saini@example.com</span>
+                    <span>rishabsainiupw165@gmail.com</span>
                   </a>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+917276193438"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
                     <span className="text-2xl">📱</span>
-                    <span>+1 (555) 123-4567</span>
+                    <span>+91 7276193438</span>
                   </a>
                   <a
-                    href="https://github.com/rishabsaini"
+                    href="https://github.com/rishabsaini31-maker"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
                     <span className="text-2xl">💼</span>
-                    <span>github.com/rishabsaini</span>
+                    <span>github.com/rishabsaini31-maker</span>
                   </a>
                   <a
-                    href="https://linkedin.com/in/rishabsaini"
+                    href="https://www.linkedin.com/in/rishab-saini-8839422b0?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
                     <span className="text-2xl">🔗</span>
-                    <span>linkedin.com/in/rishabsaini</span>
+                    <span>linkedin.com/in/rishab-saini-8839422b0</span>
                   </a>
                 </div>
               </div>
