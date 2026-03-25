@@ -483,7 +483,7 @@ export default function BlogPostPage() {
     setIsVisible(true);
   }, []);
 
-  const post = blogPosts[params.id as string];
+  const post = params && params.id ? blogPosts[params.id as string] : undefined;
 
   if (!post) {
     return (
