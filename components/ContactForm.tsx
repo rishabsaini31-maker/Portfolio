@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function ContactForm() {
   const [isVisible, setIsVisible] = useState(false);
@@ -183,6 +184,13 @@ export default function ContactForm() {
                       alt="Email"
                       className="w-6 h-6 rounded"
                     />
+                    <Image
+                      src="/gmail.jpg.webp"
+                      alt="Email"
+                      width={24}
+                      height={24}
+                      className="rounded"
+                    />
                     <span>rishabsainiupw165@gmail.com</span>
                   </a>
                   <a
@@ -203,6 +211,13 @@ export default function ContactForm() {
                       alt="WhatsApp"
                       className="w-6 h-6 rounded"
                     />
+                    <Image
+                      src="/whatsapp.jpg"
+                      alt="WhatsApp"
+                      width={24}
+                      height={24}
+                      className="rounded"
+                    />
                     <span>+91 8080380261 (WhatsApp)</span>
                   </a>
                   <a
@@ -216,6 +231,13 @@ export default function ContactForm() {
                       alt="GitHub"
                       className="w-6 h-6 rounded bg-white p-1"
                     />
+                    <Image
+                      src="/github.png"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
+                      className="rounded bg-white p-1"
+                    />
                     <span>github.com/rishabsaini31-maker</span>
                   </a>
                   <a
@@ -228,6 +250,13 @@ export default function ContactForm() {
                       src="/linkedin.webp"
                       alt="LinkedIn"
                       className="w-6 h-6 rounded"
+                    />
+                    <Image
+                      src="/linkedin.webp"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                      className="rounded"
                     />
                     <span>linkedin.com/in/rishab-saini-8839422b0</span>
                   </a>
