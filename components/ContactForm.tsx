@@ -179,11 +179,6 @@ export default function ContactForm() {
                     href="mailto:rishabsainiupw165@gmail.com"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <img
-                      src="/gmail.jpg.webp"
-                      alt="Email"
-                      className="w-6 h-6 rounded"
-                    />
                     <Image
                       src="/gmail.jpg.webp"
                       alt="Email"
@@ -206,11 +201,6 @@ export default function ContactForm() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <img
-                      src="/whatsapp.jpg"
-                      alt="WhatsApp"
-                      className="w-6 h-6 rounded"
-                    />
                     <Image
                       src="/whatsapp.jpg"
                       alt="WhatsApp"
@@ -226,11 +216,6 @@ export default function ContactForm() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <img
-                      src="/github.png"
-                      alt="GitHub"
-                      className="w-6 h-6 rounded bg-white p-1"
-                    />
                     <Image
                       src="/github.png"
                       alt="GitHub"
@@ -246,11 +231,6 @@ export default function ContactForm() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <img
-                      src="/linkedin.webp"
-                      alt="LinkedIn"
-                      className="w-6 h-6 rounded"
-                    />
                     <Image
                       src="/linkedin.webp"
                       alt="LinkedIn"
