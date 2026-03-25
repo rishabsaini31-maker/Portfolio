@@ -51,10 +51,10 @@ const projects: Project[] = [
       "Shopping cart & checkout",
       "Order tracking system",
     ],
-    demoUrl: "https://orgo-bloom.vercel.app/",
+    demoUrl: "https://orgobloom.vercel.app",
     githubUrl: "#",
     image:
-      "https://v1.screenshot.11ty.dev/https%3A%2F%2Forgo-bloom.vercel.app%2F/opengraph/",
+      "https://v1.screenshot.11ty.dev/https%3A%2F%2Forgobloom.vercel.app%2F/opengraph/",
     category: "Freelance",
   },
   {

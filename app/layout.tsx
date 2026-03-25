@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "Rishab Saini - Full Stack Developer | Building Scalable Web Applications",
+    "Rishab Saini - Full Stack Developer | App Developer | Building Scalable Web Applications",
   description:
     "Full Stack Developer specializing in building production-ready, scalable web applications. Expert in React, Next.js, Node.js, and modern web technologies.",
   keywords: [

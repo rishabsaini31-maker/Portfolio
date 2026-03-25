@@ -12,9 +12,9 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah Johnson",
-    role: "CEO",
-    company: "Tech Solutions Inc",
+    name: "Om Sable",
+    role: "FOUNDER",
+    company: " Orgobloom Fertilizers",
     content:
       "Rishab delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made the entire process smooth and efficient.",
     image:

@@ -31,7 +31,8 @@ export default function Hero() {
           Rishab Saini
         </h1>
         <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-6 font-light">
-          Full Stack Developer | Building Scalable Web Applications
+          Full Stack Developer | App Developer | Building Scalable Web
+          Applications
         </h2>
         <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
           Crafting production-ready applications with modern technologies.
