@@ -11,16 +11,22 @@ interface ContactInfo {
 
 const contactInfoList: ContactInfo[] = [
   {
-    icon: "📧",
+    icon: "📞",
     label: "Email",
     value: "rishabsainiupw165@gmail.com",
     link: "mailto:rishabsainiupw165@gmail.com",
   },
   {
-    icon: "📱",
+    icon: "📞",
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    link: "tel:+15551234567",
+    value: "+91 7276193438",
+    link: "tel:+917276193438",
+  },
+  {
+    icon: "🟢",
+    label: "WhatsApp",
+    value: "+91 8080380261",
+    link: "https://wa.me/918080380261",
   },
   {
     icon: "💼",

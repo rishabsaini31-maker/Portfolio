@@ -14,7 +14,7 @@ const experiences: Experience[] = [
   {
     title: "Full Stack Developer",
     company: "Tech Startup Inc.",
-    period: "2024 - Present",
+    period: "2026 - Present",
     description:
       "Leading development of scalable web applications using Next.js and Node.js",
     achievements: [
@@ -26,7 +26,7 @@ const experiences: Experience[] = [
   {
     title: "Freelance Developer",
     company: "Self-Employed",
-    period: "2023 - 2024",
+    period: "2024 - 2025",
     description:
       "Developed custom web solutions for various clients across different industries",
     achievements: [
@@ -38,7 +38,7 @@ const experiences: Experience[] = [
   {
     title: "Web Developer",
     company: "Digital Agency",
-    period: "2022 - 2023",
+    period: "2024 - 2025",
     description:
       "Created responsive websites and web applications for diverse clientele",
     achievements: [

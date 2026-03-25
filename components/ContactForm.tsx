@@ -170,15 +170,32 @@ export default function ContactForm() {
                     href="mailto:rishabsainiupw165@gmail.com"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <span className="text-2xl">📧</span>
+                    <img
+                      src="/gmail.jpg.webp"
+                      alt="Email"
+                      className="w-6 h-6 rounded"
+                    />
                     <span>rishabsainiupw165@gmail.com</span>
                   </a>
                   <a
                     href="tel:+917276193438"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <span className="text-2xl">📱</span>
+                    <span className="text-2xl bg-white rounded p-1">📞</span>
                     <span>+91 7276193438</span>
+                  </a>
+                  <a
+                    href="https://wa.me/918080380261"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
+                  >
+                    <img
+                      src="/whatsapp.jpg"
+                      alt="WhatsApp"
+                      className="w-6 h-6 rounded"
+                    />
+                    <span>+91 8080380261 (WhatsApp)</span>
                   </a>
                   <a
                     href="https://github.com/rishabsaini31-maker"
@@ -186,7 +203,11 @@ export default function ContactForm() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <span className="text-2xl">💼</span>
+                    <img
+                      src="/github.png"
+                      alt="GitHub"
+                      className="w-6 h-6 rounded bg-white p-1"
+                    />
                     <span>github.com/rishabsaini31-maker</span>
                   </a>
                   <a
@@ -195,7 +216,11 @@ export default function ContactForm() {
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-300 hover:text-primary-500 transition-colors"
                   >
-                    <span className="text-2xl">🔗</span>
+                    <img
+                      src="/linkedin.webp"
+                      alt="LinkedIn"
+                      className="w-6 h-6 rounded"
+                    />
                     <span>linkedin.com/in/rishab-saini-8839422b0</span>
                   </a>
                 </div>
