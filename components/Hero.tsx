@@ -52,6 +52,14 @@ export default function Hero() {
           >
             Contact Me
           </button>
+          <a
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105 border border-blue-700 hover:border-blue-600 text-center"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </section>

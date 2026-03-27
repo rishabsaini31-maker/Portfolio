@@ -44,7 +44,15 @@ const projects: Project[] = [
       "Full-featured e-commerce platform with secure payment integration, product management, and seamless shopping experience.",
     detailedDescription:
       "Orgo Bloom is a modern e-commerce platform designed for organic beauty and wellness products. The application features a beautiful, user-friendly interface with advanced product filtering, search functionality, and a seamless checkout process. Integrated with Stripe for secure payment processing, it supports multiple payment methods and provides order tracking capabilities. The admin panel allows for easy product management, inventory tracking, and sales analytics. Built with Next.js for optimal performance and SEO, the platform delivers a fast, responsive shopping experience.",
-    techStack: ["Next.js", "TypeScript", "JavaScript", "Shell" , "Tailwind CSS" , "PostgreSQL", "Drizzle ORM"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Shell",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+    ],
     features: [
       "Secure payment processing",
       "Product catalog & search",
@@ -64,7 +72,14 @@ const projects: Project[] = [
       "A web application for managing daily sales and expenses, tracking revenue, profit, and loss, and generating financial reports.",
     detailedDescription:
       "Ebook Finance Analytics manages daily sales entries, expense tracking, pending payments, and loans with detailed reports. Features interactive analytics with pie charts and diagrams for visualizing financial data, helping businesses track performance and make informed decisions.",
-    techStack: ["Next.js" , "React 18", "Firebase", "Tailwind CSS","PostgreSQL" , "Next.js API Routes" , ],
+    techStack: [
+      "Next.js",
+      "React 18",
+      "Firebase",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Next.js API Routes",
+    ],
     features: [
       "Manage daily sales , Expense ",
       "Track Revenue , Profit , Loss",
@@ -303,16 +318,27 @@ export default function ProjectsPage() {
                   </div>
 
                   <div className="flex gap-3">
-                    {project.demoUrl && (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
-                      >
-                        View Demo
-                      </a>
-                    )}
+                    {project.demoUrl &&
+                      (project.id === "ebook-web-app" ||
+                      project.id === "wholesale-landing-page" ? (
+                        <button
+                          onClick={() =>
+                            alert("This site is currently under maintenance.")
+                          }
+                          className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
+                        >
+                          View Demo
+                        </button>
+                      ) : (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
+                        >
+                          View Demo
+                        </a>
+                      ))}
                     {project.githubUrl && project.githubUrl !== "#" && (
                       <a
                         href={project.githubUrl}
