@@ -18,12 +18,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "inventory-main",
-    title: "Inventory Main",
+    id: "scsinventory-frontend",
+    title: "SCS Inventory Frontend",
     description:
-      "A comprehensive inventory management system designed for businesses to track stock, manage orders , Creating Bills , and analyze inventory data in real-time.",
+      "Inventory management system frontend for tracking stock, managing orders, creating bills, and analyzing inventory data in real-time.",
     detailedDescription:
-      "Inventory Main streamlines store operations with stock entry management, professional billing with PDF download, and comprehensive sales data tracking. Features include a profit panel for financial analysis, and customer profiles showing purchase history, products bought, and spending patterns for better customer insights.",
+      "SCS Inventory Frontend streamlines store operations with stock entry management, professional billing with PDF download, and comprehensive sales data tracking. Features include a profit panel for financial analysis, and customer profiles showing purchase history, products bought, and spending patterns for better customer insights.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
     features: [
       "Real-time stock tracking",
@@ -31,10 +31,10 @@ const projects: Project[] = [
       "Analytics dashboard",
       "Multi-user access control",
     ],
-    demoUrl: "https://inventory-main-flax.vercel.app/",
+    demoUrl: "https://scsinventory-frontend.vercel.app",
     githubUrl: "#",
     image:
-      "https://v1.screenshot.11ty.dev/https%3A%2F%2Finventory-main-flax.vercel.app%2F/opengraph/",
+      "https://v1.screenshot.11ty.dev/https%3A%2F%2Fscsinventory-frontend.vercel.app%2F/opengraph/",
     category: "Personal",
   },
   {
@@ -66,49 +66,21 @@ const projects: Project[] = [
     category: "Freelance",
   },
   {
-    id: "ebook-web-app",
-    title: "Ebook Finance Analytics",
+    id: "pure-veg-app",
+    title: "RK Pure Veg",
     description:
-      "A web application for managing daily sales and expenses, tracking revenue, profit, and loss, and generating financial reports.",
+      "Android app for exploring pure vegetarian restaurants, food items, and restaurant recommendations.",
     detailedDescription:
-      "Ebook Finance Analytics manages daily sales entries, expense tracking, pending payments, and loans with detailed reports. Features interactive analytics with pie charts and diagrams for visualizing financial data, helping businesses track performance and make informed decisions.",
-    techStack: [
-      "Next.js",
-      "React 18",
-      "Firebase",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Next.js API Routes",
-    ],
+      "Pure Veg is a comprehensive Android application that helps users discover pure vegetarian restaurants and food options. The app features restaurant listings, detailed menus, user reviews, ratings, and location-based search to find the best vegetarian dining options nearby. Built with a focus on clean UI/UX and smooth performance, it provides an intuitive experience for users looking for vegetarian food.",
+    techStack: ["Android", "Java/Kotlin", "Firebase", "Google Maps API"],
     features: [
-      "Manage daily sales , Expense ",
-      "Track Revenue , Profit , Loss",
-      "Generate reports on sales and expenses",
-      "User analytics dashboard",
+      "Restaurant discovery",
+      "Menu browsing",
+      "User reviews & ratings",
+      "Location-based search",
     ],
-    demoUrl: "https://ebook-finance-analytics.vercel.app",
-    githubUrl: "#",
-    image:
-      "https://v1.screenshot.11ty.dev/https%3A%2F%2Febook-finance-analytics.vercel.app%2F/opengraph/",
-    category: "Personal",
-  },
-  {
-    id: "wholesale-landing-page",
-    title: "Wholesale Landing Page",
-    description:
-      "High-converting landing page for wholesale business with modern design, lead capture forms, and mobile-responsive layout.",
-    detailedDescription:
-      "A professionally designed landing page created for a wholesale business client. The page is optimized for conversions with strategically placed call-to-action buttons, lead capture forms, and compelling product showcases. Built with performance in mind, the page loads quickly and provides an excellent user experience across all devices. The design follows modern UI/UX principles with clean typography, intuitive navigation, and visually appealing sections. SEO best practices were implemented to improve search engine visibility and organic traffic.",
-    techStack: ["HTML", "JavaScript", "CSS"],
-    features: [
-      "Responsive design",
-      "Lead capture forms",
-      "Product showcase",
-      "SEO optimized",
-    ],
-    demoUrl: "#",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    demoUrl: "https://play.google.com/store/apps/details?id=com.rkpureveg.app",
+    image: "/icon.png",
     category: "Freelance",
   },
 ];
@@ -318,27 +290,16 @@ export default function ProjectsPage() {
                   </div>
 
                   <div className="flex gap-3">
-                    {project.demoUrl &&
-                      (project.id === "ebook-web-app" ||
-                      project.id === "wholesale-landing-page" ? (
-                        <button
-                          onClick={() =>
-                            alert("This site is currently under maintenance.")
-                          }
-                          className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
-                        >
-                          View Demo
-                        </button>
-                      ) : (
-                        <a
-                          href={project.demoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
-                        >
-                          View Demo
-                        </a>
-                      ))}
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center hover:scale-105"
+                      >
+                        View Demo
+                      </a>
+                    )}
                     {project.githubUrl && project.githubUrl !== "#" && (
                       <a
                         href={project.githubUrl}
