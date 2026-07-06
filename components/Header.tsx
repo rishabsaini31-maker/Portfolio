@@ -54,7 +54,7 @@ export default function Header() {
               Email
             </a>
             <a
-              href="/resume-3.pdf"
+              href="/resume4.pdf"
               download
               className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300"
             >
@@ -140,7 +140,7 @@ export default function Header() {
               Email
             </a>
             <a
-              href="/resume-3.pdf"
+              href="/resume4.pdf"
               download
               className="block w-full px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 text-center"
             >

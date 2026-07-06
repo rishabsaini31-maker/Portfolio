@@ -18,12 +18,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "scsinventory-frontend",
-    title: "SCS Inventory Frontend",
+    id: "scs-flow",
+    title: "SCS-Flow",
     description:
       "Inventory management system frontend for tracking stock, managing orders, creating bills, and analyzing inventory data in real-time.",
     detailedDescription:
-      "SCS Inventory Frontend streamlines store operations with stock entry management, professional billing with PDF download, and comprehensive sales data tracking. Features include a profit panel for financial analysis, and customer profiles showing purchase history, products bought, and spending patterns for better customer insights.",
+      "SCS-Flow streamlines store operations with stock entry management, professional billing with PDF download, and comprehensive sales data tracking. Features include a profit panel for financial analysis, and customer profiles showing purchase history, products bought, and spending patterns for better customer insights.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
     features: [
       "Real-time stock tracking",
@@ -31,10 +31,10 @@ const projects: Project[] = [
       "Analytics dashboard",
       "Multi-user access control",
     ],
-    demoUrl: "https://scsinventory-frontend.vercel.app",
+    demoUrl: "https://scs-flow.vercel.app",
     githubUrl: "#",
     image:
-      "https://v1.screenshot.11ty.dev/https%3A%2F%2Fscsinventory-frontend.vercel.app%2F/opengraph/",
+      "https://v1.screenshot.11ty.dev/https%3A%2F%2Fscs-flow.vercel.app%2F/opengraph/",
     category: "Personal",
   },
   {
