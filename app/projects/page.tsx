@@ -8,7 +8,7 @@ interface Project {
   title: string;
   description: string;
   detailedDescription: string;
-  techStack: string[];
+  techStack?: string[];
   features: string[];
   demoUrl?: string;
   githubUrl?: string;
@@ -35,6 +35,24 @@ const projects: Project[] = [
     githubUrl: "#",
     image:
       "https://v1.screenshot.11ty.dev/https%3A%2F%2Fscs-flow.vercel.app%2F/opengraph/",
+    category: "Personal",
+  },
+  {
+    id: "scs-duetrack",
+    title: "SCS DueTrack",
+    description:
+      "A business due-management app for organizing customer and supplier balances, tracking payment due dates, and keeping a daily ledger.",
+    detailedDescription:
+      "SCS DueTrack gives shop owners a clearer way to manage customer and supplier accounts alongside their daily business ledger. Separate owner and staff portals support role-appropriate access: owners can manage books, ledger, settings, and staff, while staff sign in with their shop code, email, and password.",
+    features: [
+      "Customer and supplier account management",
+      "Payment due-date tracking",
+      "Daily business ledger",
+      "Separate owner and staff portals",
+    ],
+    demoUrl: "https://scs-due-track-client.vercel.app",
+    image:
+      "https://v1.screenshot.11ty.dev/https%3A%2F%2Fscs-due-track-client.vercel.app%2F/opengraph/",
     category: "Personal",
   },
   {
@@ -256,21 +274,23 @@ export default function ProjectsPage() {
                     {project.description}
                   </p>
 
-                  <div className="mb-6">
-                    <h3 className="text-sm font-semibold text-primary-400 mb-3">
-                      Tech Stack
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {project.techStack.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-700"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                  {project.techStack && (
+                    <div className="mb-6">
+                      <h3 className="text-sm font-semibold text-primary-400 mb-3">
+                        Tech Stack
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {project.techStack.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-700"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   <div className="mb-8">
                     <h3 className="text-sm font-semibold text-primary-400 mb-3">
