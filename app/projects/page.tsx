@@ -56,6 +56,25 @@ const projects: Project[] = [
     category: "Personal",
   },
   {
+    id: "scs-flow-mobile",
+    title: "SCS Flow Mobile",
+    description:
+      "An Android business management app for retailers to handle billing, inventory, purchases, customer credit, cash flow, and reports.",
+    detailedDescription:
+      "SCS Flow Mobile brings everyday retail operations together in one app. Shop owners can create and share invoices, manage products and stock, record purchases and supplier details, track customer credit and payments, and keep a daily cash book. Sales, purchase, inventory, profit and loss, and cash flow reports help make business activity easier to review.",
+    techStack: ["Android"],
+    features: [
+      "Billing and digital invoice sharing",
+      "Inventory and purchase management",
+      "Customer credit and payment tracking",
+      "Cash book, expense tracking, and business reports",
+    ],
+    demoUrl:
+      "https://play.google.com/store/apps/details?id=com.scsflow.mobile&pcampaignid=web_share",
+    image: "/scs-flow-mobile.png",
+    category: "Personal",
+  },
+  {
     id: "orgo-bloom",
     title: "Orgo Bloom",
     description:
